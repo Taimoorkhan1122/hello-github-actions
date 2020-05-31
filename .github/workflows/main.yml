@@ -7,7 +7,7 @@ jobs:
         runs-on: unbuntu-latest
         steps:
             - uses: actions/checkout@v1
-            - uese: ./action-a
+            - uses: ./action-a
               with:
                 - MY_NAME: "Taimoor"
 
