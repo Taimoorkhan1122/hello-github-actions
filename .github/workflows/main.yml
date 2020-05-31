@@ -1,2 +1,13 @@
 name: A workflow for my helloword file
 on: push
+
+jobs:
+    build:
+        name: Hello world action
+        runs-on: unbuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - uese: ./action-a
+              with:
+                - MY_NAME: "Taimoor"
+
